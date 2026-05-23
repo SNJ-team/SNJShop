@@ -39,6 +39,14 @@ public func Java_com_snj_Shop__00024handleCommand__Ljava_lang_String_2_3Ljava_la
   return Shop.handleCommand(playerName: String(fromJNI: playerName, in: environment), args: [String](fromJNI: args, in: environment)).getJNILocalRefValue(in: environment)
 } // printCDecl(_:javaMethodName:parentName:parameters:resultType:_:) @ JExtractSwiftLib/JNISwift2JavaGenerator+SwiftThunkPrinting.swift:761
 
+#if compiler(>=6.3)
+@used
+#endif
+@_cdecl("Java_com_snj_Shop__00024onShopClick__Ljava_lang_String_2I")
+public func Java_com_snj_Shop__00024onShopClick__Ljava_lang_String_2I(environment: UnsafeMutablePointer<JNIEnv?>!, thisClass: jclass, playerName: jstring?, slot: jint) {
+  Shop.onShopClick(playerName: String(fromJNI: playerName, in: environment), slot: Int32(fromJNI: slot, in: environment))
+} // printCDecl(_:javaMethodName:parentName:parameters:resultType:_:) @ JExtractSwiftLib/JNISwift2JavaGenerator+SwiftThunkPrinting.swift:761
+
 private enum _JNI_Shop {
   private static let wrapMemoryAddressUnsafeMethod = _JNIMethodIDCache.Method(
     name: "wrapMemoryAddressUnsafe",

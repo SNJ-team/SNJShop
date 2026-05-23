@@ -110,6 +110,21 @@ public final class Shop implements JNISwiftInstance {
   } // printJavaBindingWrapperMethod(_:_:importedFunc:skipMethodBody:) @ JExtractSwiftLib/JNISwift2JavaGenerator+JavaBindingsPrinting.swift:778
   private static native boolean $handleCommand(java.lang.String playerName, java.lang.String[] args);
   
+  
+  // ==== --------------------------------------------------
+  // Shop.onShopClick
+  
+  /**
+   * Downcall to Swift:
+   * {@snippet lang=swift :
+   * public static func onShopClick(playerName: String, slot: Int32)
+   * }
+   */
+  public static void onShopClick(java.lang.String playerName, int slot) {
+    Shop.$onShopClick(playerName, slot);
+  } // printJavaBindingWrapperMethod(_:_:importedFunc:skipMethodBody:) @ JExtractSwiftLib/JNISwift2JavaGenerator+JavaBindingsPrinting.swift:778
+  private static native void $onShopClick(java.lang.String playerName, int slot);
+  
   private static native long $typeMetadataAddressDowncall();
   @Override
   public long $typeMetadataAddress() {

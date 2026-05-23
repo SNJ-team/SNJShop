@@ -94,23 +94,14 @@ public struct Inventory {
 @JavaMethod
   public func getContents() -> [ItemStack?]
 
-  /// Java method `setItem`.
+  /// Java method `getMaxStackSize`.
   ///
   /// ### Java method signature
   /// ```java
-  /// public abstract void org.bukkit.inventory.Inventory.setItem(int,org.bukkit.inventory.ItemStack)
+  /// public abstract int org.bukkit.inventory.Inventory.getMaxStackSize()
   /// ```
 @JavaMethod
-  public func setItem(_ arg0: Int32, _ arg1: ItemStack?)
-
-  /// Java method `getItem`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract org.bukkit.inventory.ItemStack org.bukkit.inventory.Inventory.getItem(int)
-  /// ```
-@JavaMethod
-  public func getItem(_ arg0: Int32) -> ItemStack!
+  public func getMaxStackSize() -> Int32
 
   /// Java method `setMaxStackSize`.
   ///
@@ -121,14 +112,23 @@ public struct Inventory {
 @JavaMethod
   public func setMaxStackSize(_ arg0: Int32)
 
-  /// Java method `getMaxStackSize`.
+  /// Java method `getItem`.
   ///
   /// ### Java method signature
   /// ```java
-  /// public abstract int org.bukkit.inventory.Inventory.getMaxStackSize()
+  /// public abstract org.bukkit.inventory.ItemStack org.bukkit.inventory.Inventory.getItem(int)
   /// ```
 @JavaMethod
-  public func getMaxStackSize() -> Int32
+  public func getItem(_ arg0: Int32) -> ItemStack!
+
+  /// Java method `setItem`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract void org.bukkit.inventory.Inventory.setItem(int,org.bukkit.inventory.ItemStack)
+  /// ```
+@JavaMethod
+  public func setItem(_ arg0: Int32, _ arg1: ItemStack?)
 
   /// Java method `setContents`.
   ///

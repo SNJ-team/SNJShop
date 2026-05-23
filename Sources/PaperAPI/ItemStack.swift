@@ -56,28 +56,19 @@ open class ItemStack: JavaObject {
     ///
     /// ### Java method signature
     /// ```java
-    /// public org.bukkit.inventory.ItemStack org.bukkit.inventory.ItemStack.add(int)
-    /// ```
-  @JavaMethod
-  open func add(_ arg0: Int32) -> ItemStack!
-
-    /// Java method `add`.
-    ///
-    /// ### Java method signature
-    /// ```java
     /// public org.bukkit.inventory.ItemStack org.bukkit.inventory.ItemStack.add()
     /// ```
   @JavaMethod
   open func add() -> ItemStack!
 
-    /// Java method `subtract`.
+    /// Java method `add`.
     ///
     /// ### Java method signature
     /// ```java
-    /// public org.bukkit.inventory.ItemStack org.bukkit.inventory.ItemStack.subtract()
+    /// public org.bukkit.inventory.ItemStack org.bukkit.inventory.ItemStack.add(int)
     /// ```
   @JavaMethod
-  open func subtract() -> ItemStack!
+  open func add(_ arg0: Int32) -> ItemStack!
 
     /// Java method `subtract`.
     ///
@@ -87,6 +78,15 @@ open class ItemStack: JavaObject {
     /// ```
   @JavaMethod
   open func subtract(_ arg0: Int32) -> ItemStack!
+
+    /// Java method `subtract`.
+    ///
+    /// ### Java method signature
+    /// ```java
+    /// public org.bukkit.inventory.ItemStack org.bukkit.inventory.ItemStack.subtract()
+    /// ```
+  @JavaMethod
+  open func subtract() -> ItemStack!
 
     /// Java method `getDisplayName`.
     ///
@@ -106,33 +106,23 @@ open class ItemStack: JavaObject {
   @JavaMethod
   open func getLocalizedName() -> String
 
-    /// Java method `hasAttributeModifiers`.
+    /// Java method `getAmount`.
     ///
     /// ### Java method signature
     /// ```java
-    /// public boolean org.bukkit.inventory.ItemStack.hasAttributeModifiers()
+    /// public int org.bukkit.inventory.ItemStack.getAmount()
     /// ```
   @JavaMethod
-  open func hasAttributeModifiers() -> Bool
+  open func getAmount() -> Int32
 
-    /// Java method `ensureServerConversions`.
+    /// Java method `getMaxStackSize`.
     ///
     /// ### Java method signature
     /// ```java
-    /// public org.bukkit.inventory.ItemStack org.bukkit.inventory.ItemStack.ensureServerConversions()
+    /// public int org.bukkit.inventory.ItemStack.getMaxStackSize()
     /// ```
   @JavaMethod
-  open func ensureServerConversions() -> ItemStack!
-
-    /// Java method `getMaxItemUseDuration`.
-    ///
-    /// ### Java method signature
-    /// ```java
-    /// public int org.bukkit.inventory.ItemStack.getMaxItemUseDuration()
-    /// ```
-  @available(*, deprecated)
-  @JavaMethod
-  open func getMaxItemUseDuration() -> Int32
+  open func getMaxStackSize() -> Int32
 
     /// Java method `hasDisplayName`.
     ///
@@ -223,97 +213,6 @@ open class ItemStack: JavaObject {
     /// ```
   @JavaMethod
   open func setUnbreakable(_ arg0: Bool)
-
-    /// Java method `damage`.
-    ///
-    /// ### Java method signature
-    /// ```java
-    /// public boolean org.bukkit.inventory.ItemStack.damage(int,boolean)
-    /// ```
-  @JavaMethod
-  open func damage(_ arg0: Int32, _ arg1: Bool) -> Bool
-
-    /// Java method `damage`.
-    ///
-    /// ### Java method signature
-    /// ```java
-    /// public boolean org.bukkit.inventory.ItemStack.damage(int)
-    /// ```
-  @JavaMethod
-  open func damage(_ arg0: Int32) -> Bool
-
-    /// Java method `damage`.
-    ///
-    /// ### Java method signature
-    /// ```java
-    /// public boolean org.bukkit.inventory.ItemStack.damage()
-    /// ```
-  @JavaMethod
-  open func damage() -> Bool
-
-    /// Java method `translationKey`.
-    ///
-    /// ### Java method signature
-    /// ```java
-    /// public java.lang.String org.bukkit.inventory.ItemStack.translationKey()
-    /// ```
-  @JavaMethod
-  open func translationKey() -> String
-
-    /// Java method `getTranslationKey`.
-    ///
-    /// ### Java method signature
-    /// ```java
-    /// public java.lang.String org.bukkit.inventory.ItemStack.getTranslationKey()
-    /// ```
-  @available(*, deprecated)
-  @JavaMethod
-  open func getTranslationKey() -> String
-
-    /// Java method `getMaxStackSize`.
-    ///
-    /// ### Java method signature
-    /// ```java
-    /// public int org.bukkit.inventory.ItemStack.getMaxStackSize()
-    /// ```
-  @JavaMethod
-  open func getMaxStackSize() -> Int32
-
-    /// Java method `setDisplayName`.
-    ///
-    /// ### Java method signature
-    /// ```java
-    /// public void org.bukkit.inventory.ItemStack.setDisplayName(java.lang.String)
-    /// ```
-  @JavaMethod
-  open func setDisplayName(_ arg0: String)
-
-    /// Java method `getAmount`.
-    ///
-    /// ### Java method signature
-    /// ```java
-    /// public int org.bukkit.inventory.ItemStack.getAmount()
-    /// ```
-  @JavaMethod
-  open func getAmount() -> Int32
-
-    /// Java method `getItemMeta`.
-    ///
-    /// ### Java method signature
-    /// ```java
-    /// public org.bukkit.inventory.meta.ItemMeta org.bukkit.inventory.ItemStack.getItemMeta()
-    /// ```
-  @JavaMethod
-  open func getItemMeta() -> ItemMeta!
-
-    /// Java method `setItemMeta`.
-    ///
-    /// ### Java method signature
-    /// ```java
-    /// public boolean org.bukkit.inventory.ItemStack.setItemMeta(org.bukkit.inventory.meta.ItemMeta)
-    /// ```
-  @JavaMethod
-  open func setItemMeta(_ arg0: ItemMeta?) -> Bool
 
     /// Java method `setDurability`.
     ///
@@ -457,19 +356,19 @@ open class ItemStack: JavaObject {
     ///
     /// ### Java method signature
     /// ```java
-    /// public void org.bukkit.inventory.ItemStack.repair(int)
+    /// public void org.bukkit.inventory.ItemStack.repair()
     /// ```
   @JavaMethod
-  open func repair(_ arg0: Int32)
+  open func repair()
 
     /// Java method `repair`.
     ///
     /// ### Java method signature
     /// ```java
-    /// public void org.bukkit.inventory.ItemStack.repair()
+    /// public void org.bukkit.inventory.ItemStack.repair(int)
     /// ```
   @JavaMethod
-  open func repair()
+  open func repair(_ arg0: Int32)
 
     /// Java method `asOne`.
     ///
@@ -497,6 +396,107 @@ open class ItemStack: JavaObject {
     /// ```
   @JavaMethod
   open func canRepair(_ arg0: ItemStack?) -> Bool
+
+    /// Java method `setDisplayName`.
+    ///
+    /// ### Java method signature
+    /// ```java
+    /// public void org.bukkit.inventory.ItemStack.setDisplayName(java.lang.String)
+    /// ```
+  @JavaMethod
+  open func setDisplayName(_ arg0: String)
+
+    /// Java method `damage`.
+    ///
+    /// ### Java method signature
+    /// ```java
+    /// public boolean org.bukkit.inventory.ItemStack.damage(int)
+    /// ```
+  @JavaMethod
+  open func damage(_ arg0: Int32) -> Bool
+
+    /// Java method `damage`.
+    ///
+    /// ### Java method signature
+    /// ```java
+    /// public boolean org.bukkit.inventory.ItemStack.damage()
+    /// ```
+  @JavaMethod
+  open func damage() -> Bool
+
+    /// Java method `damage`.
+    ///
+    /// ### Java method signature
+    /// ```java
+    /// public boolean org.bukkit.inventory.ItemStack.damage(int,boolean)
+    /// ```
+  @JavaMethod
+  open func damage(_ arg0: Int32, _ arg1: Bool) -> Bool
+
+    /// Java method `getTranslationKey`.
+    ///
+    /// ### Java method signature
+    /// ```java
+    /// public java.lang.String org.bukkit.inventory.ItemStack.getTranslationKey()
+    /// ```
+  @available(*, deprecated)
+  @JavaMethod
+  open func getTranslationKey() -> String
+
+    /// Java method `translationKey`.
+    ///
+    /// ### Java method signature
+    /// ```java
+    /// public java.lang.String org.bukkit.inventory.ItemStack.translationKey()
+    /// ```
+  @JavaMethod
+  open func translationKey() -> String
+
+    /// Java method `getItemMeta`.
+    ///
+    /// ### Java method signature
+    /// ```java
+    /// public org.bukkit.inventory.meta.ItemMeta org.bukkit.inventory.ItemStack.getItemMeta()
+    /// ```
+  @JavaMethod
+  open func getItemMeta() -> ItemMeta!
+
+    /// Java method `setItemMeta`.
+    ///
+    /// ### Java method signature
+    /// ```java
+    /// public boolean org.bukkit.inventory.ItemStack.setItemMeta(org.bukkit.inventory.meta.ItemMeta)
+    /// ```
+  @JavaMethod
+  open func setItemMeta(_ arg0: ItemMeta?) -> Bool
+
+    /// Java method `hasAttributeModifiers`.
+    ///
+    /// ### Java method signature
+    /// ```java
+    /// public boolean org.bukkit.inventory.ItemStack.hasAttributeModifiers()
+    /// ```
+  @JavaMethod
+  open func hasAttributeModifiers() -> Bool
+
+    /// Java method `ensureServerConversions`.
+    ///
+    /// ### Java method signature
+    /// ```java
+    /// public org.bukkit.inventory.ItemStack org.bukkit.inventory.ItemStack.ensureServerConversions()
+    /// ```
+  @JavaMethod
+  open func ensureServerConversions() -> ItemStack!
+
+    /// Java method `getMaxItemUseDuration`.
+    ///
+    /// ### Java method signature
+    /// ```java
+    /// public int org.bukkit.inventory.ItemStack.getMaxItemUseDuration()
+    /// ```
+  @available(*, deprecated)
+  @JavaMethod
+  open func getMaxItemUseDuration() -> Int32
 }
 extension JavaClass<ItemStack> {
   /// Java method `empty`.
@@ -507,6 +507,15 @@ extension JavaClass<ItemStack> {
   /// ```
 @JavaStaticMethod
   public func empty() -> ItemStack!
+
+  /// Java method `deserializeBytes`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public static org.bukkit.inventory.ItemStack org.bukkit.inventory.ItemStack.deserializeBytes(byte[])
+  /// ```
+@JavaStaticMethod
+  public func deserializeBytes(_ arg0: [Int8]) -> ItemStack!
 
   /// Java method `serializeItemsAsBytes`.
   ///
@@ -525,13 +534,4 @@ extension JavaClass<ItemStack> {
   /// ```
 @JavaStaticMethod
   public func deserializeItemsFromBytes(_ arg0: [Int8]) -> [ItemStack?]
-
-  /// Java method `deserializeBytes`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public static org.bukkit.inventory.ItemStack org.bukkit.inventory.ItemStack.deserializeBytes(byte[])
-  /// ```
-@JavaStaticMethod
-  public func deserializeBytes(_ arg0: [Int8]) -> ItemStack!
 }

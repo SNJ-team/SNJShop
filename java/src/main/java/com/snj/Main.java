@@ -18,6 +18,8 @@ public class Main extends JavaPlugin {
         getLogger().info("=================================");
         System.load("/Users/oleksijbrikin/SNJ/projects/SNJShop/.build/arm64-apple-macosx/debug/libSNJShop.dylib");
         getCommand("swift").setExecutor(new SwiftCommand());
+        getServer().getPluginManager().registerEvents(new ShopListener(), this);
+        EconomyManager.setup(this);
     }
 
     @Override

@@ -33,6 +33,14 @@ JNIEXPORT jboolean JNICALL Java_com_snj_Shop__00024handleCommand
 
 /*
  * Class:     com_snj_Shop
+ * Method:    _00024onShopClick
+ * Signature: (Ljava/lang/String;I)V
+ */
+JNIEXPORT void JNICALL Java_com_snj_Shop__00024onShopClick
+  (JNIEnv *, jclass, jstring, jint);
+
+/*
+ * Class:     com_snj_Shop
  * Method:    _00024typeMetadataAddressDowncall
  * Signature: ()J
  */
