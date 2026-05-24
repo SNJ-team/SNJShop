@@ -4,61 +4,14 @@ import SwiftJavaJNICore
 
 @JavaInterface("org.bukkit.inventory.meta.ItemMeta")
 public struct ItemMeta {
-  /// Java method `clone`.
+  /// Java method `hasCustomName`.
   ///
   /// ### Java method signature
   /// ```java
-  /// public abstract org.bukkit.inventory.meta.ItemMeta org.bukkit.inventory.meta.ItemMeta.clone()
+  /// public abstract boolean org.bukkit.inventory.meta.ItemMeta.hasCustomName()
   /// ```
 @JavaMethod
-  public func clone() -> ItemMeta!
-
-  /// Java method `setVersion`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract void org.bukkit.inventory.meta.ItemMeta.setVersion(int)
-  /// ```
-@JavaMethod
-  public func setVersion(_ arg0: Int32)
-
-  /// Java method `getDisplayName`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract java.lang.String org.bukkit.inventory.meta.ItemMeta.getDisplayName()
-  /// ```
-@available(*, deprecated)
-  @JavaMethod
-  public func getDisplayName() -> String
-
-  /// Java method `getLocalizedName`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract java.lang.String org.bukkit.inventory.meta.ItemMeta.getLocalizedName()
-  /// ```
-@available(*, deprecated)
-  @JavaMethod
-  public func getLocalizedName() -> String
-
-  /// Java method `getMaxStackSize`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract int org.bukkit.inventory.meta.ItemMeta.getMaxStackSize()
-  /// ```
-@JavaMethod
-  public func getMaxStackSize() -> Int32
-
-  /// Java method `hasItemName`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract boolean org.bukkit.inventory.meta.ItemMeta.hasItemName()
-  /// ```
-@JavaMethod
-  public func hasItemName() -> Bool
+  public func hasCustomName() -> Bool
 
   /// Java method `hasDisplayName`.
   ///
@@ -69,14 +22,14 @@ public struct ItemMeta {
 @JavaMethod
   public func hasDisplayName() -> Bool
 
-  /// Java method `hasCustomName`.
+  /// Java method `hasItemName`.
   ///
   /// ### Java method signature
   /// ```java
-  /// public abstract boolean org.bukkit.inventory.meta.ItemMeta.hasCustomName()
+  /// public abstract boolean org.bukkit.inventory.meta.ItemMeta.hasItemName()
   /// ```
 @JavaMethod
-  public func hasCustomName() -> Bool
+  public func hasItemName() -> Bool
 
   /// Java method `getItemName`.
   ///
@@ -354,6 +307,15 @@ public struct ItemMeta {
 @JavaMethod
   public func hasTool() -> Bool
 
+  /// Java method `hasEquippable`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract boolean org.bukkit.inventory.meta.ItemMeta.hasEquippable()
+  /// ```
+@JavaMethod
+  public func hasEquippable() -> Bool
+
   /// Java method `hasJukeboxPlayable`.
   ///
   /// ### Java method signature
@@ -393,6 +355,15 @@ public struct ItemMeta {
   @JavaMethod
   public func setDisplayName(_ arg0: String)
 
+  /// Java method `getMaxStackSize`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract int org.bukkit.inventory.meta.ItemMeta.getMaxStackSize()
+  /// ```
+@JavaMethod
+  public func getMaxStackSize() -> Int32
+
   /// Java method `getAsString`.
   ///
   /// ### Java method signature
@@ -401,15 +372,6 @@ public struct ItemMeta {
   /// ```
 @JavaMethod
   public func getAsString() -> String
-
-  /// Java method `hasEquippable`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract boolean org.bukkit.inventory.meta.ItemMeta.hasEquippable()
-  /// ```
-@JavaMethod
-  public func hasEquippable() -> Bool
 
   /// Java method `hasEnchantmentGlintOverride`.
   ///
@@ -437,4 +399,42 @@ public struct ItemMeta {
   /// ```
 @JavaMethod
   public func getAsComponentString() -> String
+
+  /// Java method `clone`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract org.bukkit.inventory.meta.ItemMeta org.bukkit.inventory.meta.ItemMeta.clone()
+  /// ```
+@JavaMethod
+  public func clone() -> ItemMeta!
+
+  /// Java method `setVersion`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract void org.bukkit.inventory.meta.ItemMeta.setVersion(int)
+  /// ```
+@JavaMethod
+  public func setVersion(_ arg0: Int32)
+
+  /// Java method `getDisplayName`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract java.lang.String org.bukkit.inventory.meta.ItemMeta.getDisplayName()
+  /// ```
+@available(*, deprecated)
+  @JavaMethod
+  public func getDisplayName() -> String
+
+  /// Java method `getLocalizedName`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract java.lang.String org.bukkit.inventory.meta.ItemMeta.getLocalizedName()
+  /// ```
+@available(*, deprecated)
+  @JavaMethod
+  public func getLocalizedName() -> String
 }

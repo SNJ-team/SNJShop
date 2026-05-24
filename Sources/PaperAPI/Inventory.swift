@@ -4,96 +4,6 @@ import SwiftJavaJNICore
 
 @JavaInterface("org.bukkit.inventory.Inventory")
 public struct Inventory {
-  /// Java method `remove`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract void org.bukkit.inventory.Inventory.remove(org.bukkit.inventory.ItemStack)
-  /// ```
-@JavaMethod
-  public func remove(_ arg0: ItemStack?)
-
-  /// Java method `clear`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract void org.bukkit.inventory.Inventory.clear(int)
-  /// ```
-@JavaMethod
-  public func clear(_ arg0: Int32)
-
-  /// Java method `clear`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract void org.bukkit.inventory.Inventory.clear()
-  /// ```
-@JavaMethod
-  public func clear()
-
-  /// Java method `isEmpty`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract boolean org.bukkit.inventory.Inventory.isEmpty()
-  /// ```
-@JavaMethod
-  public func isEmpty() -> Bool
-
-  /// Java method `contains`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract boolean org.bukkit.inventory.Inventory.contains(org.bukkit.inventory.ItemStack)
-  /// ```
-@JavaMethod
-  public func contains(_ arg0: ItemStack?) -> Bool
-
-  /// Java method `contains`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract boolean org.bukkit.inventory.Inventory.contains(org.bukkit.inventory.ItemStack,int)
-  /// ```
-@JavaMethod
-  public func contains(_ arg0: ItemStack?, _ arg1: Int32) -> Bool
-
-  /// Java method `first`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract int org.bukkit.inventory.Inventory.first(org.bukkit.inventory.ItemStack)
-  /// ```
-@JavaMethod
-  public func first(_ arg0: ItemStack?) -> Int32
-
-  /// Java method `close`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract int org.bukkit.inventory.Inventory.close()
-  /// ```
-@JavaMethod
-  public func close() -> Int32
-
-  /// Java method `getSize`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract int org.bukkit.inventory.Inventory.getSize()
-  /// ```
-@JavaMethod
-  public func getSize() -> Int32
-
-  /// Java method `getContents`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract org.bukkit.inventory.ItemStack[] org.bukkit.inventory.Inventory.getContents()
-  /// ```
-@JavaMethod
-  public func getContents() -> [ItemStack?]
-
   /// Java method `getMaxStackSize`.
   ///
   /// ### Java method signature
@@ -192,4 +102,94 @@ public struct Inventory {
   /// ```
 @JavaMethod
   public func getHolder() -> InventoryHolder!
+
+  /// Java method `remove`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract void org.bukkit.inventory.Inventory.remove(org.bukkit.inventory.ItemStack)
+  /// ```
+@JavaMethod
+  public func remove(_ arg0: ItemStack?)
+
+  /// Java method `clear`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract void org.bukkit.inventory.Inventory.clear()
+  /// ```
+@JavaMethod
+  public func clear()
+
+  /// Java method `clear`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract void org.bukkit.inventory.Inventory.clear(int)
+  /// ```
+@JavaMethod
+  public func clear(_ arg0: Int32)
+
+  /// Java method `isEmpty`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract boolean org.bukkit.inventory.Inventory.isEmpty()
+  /// ```
+@JavaMethod
+  public func isEmpty() -> Bool
+
+  /// Java method `contains`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract boolean org.bukkit.inventory.Inventory.contains(org.bukkit.inventory.ItemStack,int)
+  /// ```
+@JavaMethod
+  public func contains(_ arg0: ItemStack?, _ arg1: Int32) -> Bool
+
+  /// Java method `contains`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract boolean org.bukkit.inventory.Inventory.contains(org.bukkit.inventory.ItemStack)
+  /// ```
+@JavaMethod
+  public func contains(_ arg0: ItemStack?) -> Bool
+
+  /// Java method `first`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract int org.bukkit.inventory.Inventory.first(org.bukkit.inventory.ItemStack)
+  /// ```
+@JavaMethod
+  public func first(_ arg0: ItemStack?) -> Int32
+
+  /// Java method `close`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract int org.bukkit.inventory.Inventory.close()
+  /// ```
+@JavaMethod
+  public func close() -> Int32
+
+  /// Java method `getSize`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract int org.bukkit.inventory.Inventory.getSize()
+  /// ```
+@JavaMethod
+  public func getSize() -> Int32
+
+  /// Java method `getContents`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract org.bukkit.inventory.ItemStack[] org.bukkit.inventory.Inventory.getContents()
+  /// ```
+@JavaMethod
+  public func getContents() -> [ItemStack?]
 }

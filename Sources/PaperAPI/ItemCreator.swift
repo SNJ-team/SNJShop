@@ -8,15 +8,6 @@ open class ItemCreator: JavaObject {
   @_nonoverride public convenience init(environment: JNIEnvironment? = nil)
 }
 extension JavaClass<ItemCreator> {
-  /// Java method `sendMessage`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public static void com.snj.ItemCreator.sendMessage(java.lang.String,java.lang.String)
-  /// ```
-@JavaStaticMethod
-  public func sendMessage(_ arg0: String, _ arg1: String)
-
   /// Java method `createItem`.
   ///
   /// ### Java method signature
@@ -25,6 +16,15 @@ extension JavaClass<ItemCreator> {
   /// ```
 @JavaStaticMethod
   public func createItem(_ arg0: String, _ arg1: String, _ arg2: Int32) -> ItemStack!
+
+  /// Java method `sendMessage`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public static void com.snj.ItemCreator.sendMessage(java.lang.String,java.lang.String)
+  /// ```
+@JavaStaticMethod
+  public func sendMessage(_ arg0: String, _ arg1: String)
 
   /// Java method `giveItem`.
   ///

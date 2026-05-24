@@ -4,14 +4,24 @@ import SwiftJavaJNICore
 
 @JavaClass("org.bukkit.event.inventory.InventoryClickEvent")
 open class InventoryClickEvent: JavaObject {
-  /// Java method `getSlot`.
+  /// Java method `setCursor`.
   ///
   /// ### Java method signature
   /// ```java
-  /// public int org.bukkit.event.inventory.InventoryClickEvent.getSlot()
+  /// public void org.bukkit.event.inventory.InventoryClickEvent.setCursor(org.bukkit.inventory.ItemStack)
+  /// ```
+@available(*, deprecated)
+  @JavaMethod
+  open func setCursor(_ arg0: ItemStack?)
+
+  /// Java method `getCursor`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public org.bukkit.inventory.ItemStack org.bukkit.event.inventory.InventoryClickEvent.getCursor()
   /// ```
 @JavaMethod
-  open func getSlot() -> Int32
+  open func getCursor() -> ItemStack!
 
   /// Java method `isRightClick`.
   ///
@@ -76,25 +86,6 @@ open class InventoryClickEvent: JavaObject {
 @JavaMethod
   open func getHotbarButton() -> Int32
 
-  /// Java method `setCursor`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public void org.bukkit.event.inventory.InventoryClickEvent.setCursor(org.bukkit.inventory.ItemStack)
-  /// ```
-@available(*, deprecated)
-  @JavaMethod
-  open func setCursor(_ arg0: ItemStack?)
-
-  /// Java method `getCursor`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public org.bukkit.inventory.ItemStack org.bukkit.event.inventory.InventoryClickEvent.getCursor()
-  /// ```
-@JavaMethod
-  open func getCursor() -> ItemStack!
-
   /// Java method `getClickedInventory`.
   ///
   /// ### Java method signature
@@ -103,4 +94,13 @@ open class InventoryClickEvent: JavaObject {
   /// ```
 @JavaMethod
   open func getClickedInventory() -> Inventory!
+
+  /// Java method `getSlot`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public int org.bukkit.event.inventory.InventoryClickEvent.getSlot()
+  /// ```
+@JavaMethod
+  open func getSlot() -> Int32
 }

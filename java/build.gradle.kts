@@ -40,8 +40,10 @@ tasks.withType<ProcessResources> {
 }
 
 tasks.jar {
-    from("/Users/oleksijbrikin/SNJ/projects/SNJShop/.build/arm64-apple-macosx/debug/libSNJShop.dylib")
-    from("/Users/oleksijbrikin/SNJ/projects/SNJShop/.build/arm64-apple-macosx/debug/libSwiftJava.dylib")
+    archiveFileName.set("SNJShop.jar")
+    from("/Users/oleksijbrikin/SNJ/libs/swift-java/.build/arm64-apple-macosx/debug/libSwiftRuntimeFunctions.dylib")
+    from("/Users/oleksijbrikin/SNJ/projects/SNJShop/.build/arm64-apple-macosx/release/libSNJShop.dylib")
+    from("/Users/oleksijbrikin/SNJ/projects/SNJShop/.build/arm64-apple-macosx/release/libSwiftJava.dylib")
     from("/Users/oleksijbrikin/SNJ/libs/swift-java/.build/arm64-apple-macosx/debug/libSwiftRuntimeFunctions.dylib")
     from(configurations.runtimeClasspath.get().map { if (it.isDirectory) it else zipTree(it) })
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE

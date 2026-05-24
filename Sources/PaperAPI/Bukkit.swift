@@ -7,117 +7,6 @@ open class Bukkit: JavaObject {
 
 }
 extension JavaClass<Bukkit> {
-  /// Java method `getName`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public static java.lang.String org.bukkit.Bukkit.getName()
-  /// ```
-@JavaStaticMethod
-  public func getName() -> String
-
-  /// Java method `shutdown`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public static void org.bukkit.Bukkit.shutdown()
-  /// ```
-@JavaStaticMethod
-  public func shutdown()
-
-  /// Java method `getPort`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public static int org.bukkit.Bukkit.getPort()
-  /// ```
-@JavaStaticMethod
-  public func getPort() -> Int32
-
-  /// Java method `broadcast`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public static int org.bukkit.Bukkit.broadcast(java.lang.String,java.lang.String)
-  /// ```
-@available(*, deprecated)
-  @JavaStaticMethod
-  public func broadcast(_ arg0: String, _ arg1: String) -> Int32
-
-  /// Java method `reload`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public static void org.bukkit.Bukkit.reload()
-  /// ```
-@JavaStaticMethod
-  public func reload()
-
-  /// Java method `getVersion`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public static java.lang.String org.bukkit.Bukkit.getVersion()
-  /// ```
-@JavaStaticMethod
-  public func getVersion() -> String
-
-  /// Java method `getTicksPerWaterUndergroundCreatureSpawns`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public static int org.bukkit.Bukkit.getTicksPerWaterUndergroundCreatureSpawns()
-  /// ```
-@available(*, deprecated)
-  @JavaStaticMethod
-  public func getTicksPerWaterUndergroundCreatureSpawns() -> Int32
-
-  /// Java method `getWaterUndergroundCreatureSpawnLimit`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public static int org.bukkit.Bukkit.getWaterUndergroundCreatureSpawnLimit()
-  /// ```
-@available(*, deprecated)
-  @JavaStaticMethod
-  public func getWaterUndergroundCreatureSpawnLimit() -> Int32
-
-  /// Java method `suggestPlayerNamesWhenNullTabCompletions`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public static boolean org.bukkit.Bukkit.suggestPlayerNamesWhenNullTabCompletions()
-  /// ```
-@JavaStaticMethod
-  public func suggestPlayerNamesWhenNullTabCompletions() -> Bool
-
-  /// Java method `getAllowFlight`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public static boolean org.bukkit.Bukkit.getAllowFlight()
-  /// ```
-@JavaStaticMethod
-  public func getAllowFlight() -> Bool
-
-  /// Java method `getPlayer`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public static org.bukkit.entity.Player org.bukkit.Bukkit.getPlayer(java.lang.String)
-  /// ```
-@JavaStaticMethod
-  public func getPlayer(_ arg0: String) -> Player!
-
-  /// Java method `getViewDistance`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public static int org.bukkit.Bukkit.getViewDistance()
-  /// ```
-@JavaStaticMethod
-  public func getViewDistance() -> Int32
-
   /// Java method `getVersionMessage`.
   ///
   /// ### Java method signature
@@ -153,6 +42,15 @@ extension JavaClass<Bukkit> {
   /// ```
 @JavaStaticMethod
   public func setMaxPlayers(_ arg0: Int32)
+
+  /// Java method `getViewDistance`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public static int org.bukkit.Bukkit.getViewDistance()
+  /// ```
+@JavaStaticMethod
+  public func getViewDistance() -> Int32
 
   /// Java method `getIp`.
   ///
@@ -263,6 +161,15 @@ extension JavaClass<Bukkit> {
 @JavaStaticMethod
   public func getUpdateFolder() -> String
 
+  /// Java method `getPlayer`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public static org.bukkit.entity.Player org.bukkit.Bukkit.getPlayer(java.lang.String)
+  /// ```
+@JavaStaticMethod
+  public func getPlayer(_ arg0: String) -> Player!
+
   /// Java method `getPlayerExact`.
   ///
   /// ### Java method signature
@@ -371,6 +278,15 @@ extension JavaClass<Bukkit> {
   /// ```
 @JavaStaticMethod
   public func getOnlineMode() -> Bool
+
+  /// Java method `getAllowFlight`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public static boolean org.bukkit.Bukkit.getAllowFlight()
+  /// ```
+@JavaStaticMethod
+  public func getAllowFlight() -> Bool
 
   /// Java method `isHardcore`.
   ///
@@ -567,26 +483,6 @@ extension JavaClass<Bukkit> {
 @JavaStaticMethod
   public func isLagging() -> Bool
 
-  /// Java method `getTicksPerWaterAmbientSpawns`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public static int org.bukkit.Bukkit.getTicksPerWaterAmbientSpawns()
-  /// ```
-@available(*, deprecated)
-  @JavaStaticMethod
-  public func getTicksPerWaterAmbientSpawns() -> Int32
-
-  /// Java method `getWaterAmbientSpawnLimit`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public static int org.bukkit.Bukkit.getWaterAmbientSpawnLimit()
-  /// ```
-@available(*, deprecated)
-  @JavaStaticMethod
-  public func getWaterAmbientSpawnLimit() -> Int32
-
   /// Java method `getMinecraftVersion`.
   ///
   /// ### Java method signature
@@ -596,6 +492,15 @@ extension JavaClass<Bukkit> {
 @JavaStaticMethod
   public func getMinecraftVersion() -> String
 
+  /// Java method `getSimulationDistance`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public static int org.bukkit.Bukkit.getSimulationDistance()
+  /// ```
+@JavaStaticMethod
+  public func getSimulationDistance() -> Int32
+
   /// Java method `getGenerateStructures`.
   ///
   /// ### Java method signature
@@ -604,6 +509,15 @@ extension JavaClass<Bukkit> {
   /// ```
 @JavaStaticMethod
   public func getGenerateStructures() -> Bool
+
+  /// Java method `getResourcePackHash`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public static java.lang.String org.bukkit.Bukkit.getResourcePackHash()
+  /// ```
+@JavaStaticMethod
+  public func getResourcePackHash() -> String
 
   /// Java method `getResourcePackPrompt`.
   ///
@@ -822,21 +736,107 @@ extension JavaClass<Bukkit> {
 @JavaStaticMethod
   public func clearBlockHighlights()
 
-  /// Java method `getResourcePackHash`.
+  /// Java method `getTicksPerWaterAmbientSpawns`.
   ///
   /// ### Java method signature
   /// ```java
-  /// public static java.lang.String org.bukkit.Bukkit.getResourcePackHash()
+  /// public static int org.bukkit.Bukkit.getTicksPerWaterAmbientSpawns()
   /// ```
-@JavaStaticMethod
-  public func getResourcePackHash() -> String
+@available(*, deprecated)
+  @JavaStaticMethod
+  public func getTicksPerWaterAmbientSpawns() -> Int32
 
-  /// Java method `getSimulationDistance`.
+  /// Java method `getWaterAmbientSpawnLimit`.
   ///
   /// ### Java method signature
   /// ```java
-  /// public static int org.bukkit.Bukkit.getSimulationDistance()
+  /// public static int org.bukkit.Bukkit.getWaterAmbientSpawnLimit()
+  /// ```
+@available(*, deprecated)
+  @JavaStaticMethod
+  public func getWaterAmbientSpawnLimit() -> Int32
+
+  /// Java method `getTicksPerWaterUndergroundCreatureSpawns`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public static int org.bukkit.Bukkit.getTicksPerWaterUndergroundCreatureSpawns()
+  /// ```
+@available(*, deprecated)
+  @JavaStaticMethod
+  public func getTicksPerWaterUndergroundCreatureSpawns() -> Int32
+
+  /// Java method `getWaterUndergroundCreatureSpawnLimit`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public static int org.bukkit.Bukkit.getWaterUndergroundCreatureSpawnLimit()
+  /// ```
+@available(*, deprecated)
+  @JavaStaticMethod
+  public func getWaterUndergroundCreatureSpawnLimit() -> Int32
+
+  /// Java method `suggestPlayerNamesWhenNullTabCompletions`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public static boolean org.bukkit.Bukkit.suggestPlayerNamesWhenNullTabCompletions()
   /// ```
 @JavaStaticMethod
-  public func getSimulationDistance() -> Int32
+  public func suggestPlayerNamesWhenNullTabCompletions() -> Bool
+
+  /// Java method `getName`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public static java.lang.String org.bukkit.Bukkit.getName()
+  /// ```
+@JavaStaticMethod
+  public func getName() -> String
+
+  /// Java method `shutdown`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public static void org.bukkit.Bukkit.shutdown()
+  /// ```
+@JavaStaticMethod
+  public func shutdown()
+
+  /// Java method `getPort`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public static int org.bukkit.Bukkit.getPort()
+  /// ```
+@JavaStaticMethod
+  public func getPort() -> Int32
+
+  /// Java method `broadcast`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public static int org.bukkit.Bukkit.broadcast(java.lang.String,java.lang.String)
+  /// ```
+@available(*, deprecated)
+  @JavaStaticMethod
+  public func broadcast(_ arg0: String, _ arg1: String) -> Int32
+
+  /// Java method `reload`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public static void org.bukkit.Bukkit.reload()
+  /// ```
+@JavaStaticMethod
+  public func reload()
+
+  /// Java method `getVersion`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public static java.lang.String org.bukkit.Bukkit.getVersion()
+  /// ```
+@JavaStaticMethod
+  public func getVersion() -> String
 }
