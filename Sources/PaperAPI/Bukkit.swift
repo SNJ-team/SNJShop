@@ -7,6 +7,61 @@ open class Bukkit: JavaObject {
 
 }
 extension JavaClass<Bukkit> {
+  /// Java method `getName`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public static java.lang.String org.bukkit.Bukkit.getName()
+  /// ```
+@JavaStaticMethod
+  public func getName() -> String
+
+  /// Java method `shutdown`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public static void org.bukkit.Bukkit.shutdown()
+  /// ```
+@JavaStaticMethod
+  public func shutdown()
+
+  /// Java method `getPort`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public static int org.bukkit.Bukkit.getPort()
+  /// ```
+@JavaStaticMethod
+  public func getPort() -> Int32
+
+  /// Java method `broadcast`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public static int org.bukkit.Bukkit.broadcast(java.lang.String,java.lang.String)
+  /// ```
+@available(*, deprecated)
+  @JavaStaticMethod
+  public func broadcast(_ arg0: String, _ arg1: String) -> Int32
+
+  /// Java method `reload`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public static void org.bukkit.Bukkit.reload()
+  /// ```
+@JavaStaticMethod
+  public func reload()
+
+  /// Java method `getVersion`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public static java.lang.String org.bukkit.Bukkit.getVersion()
+  /// ```
+@JavaStaticMethod
+  public func getVersion() -> String
+
   /// Java method `getVersionMessage`.
   ///
   /// ### Java method signature
@@ -784,59 +839,4 @@ extension JavaClass<Bukkit> {
   /// ```
 @JavaStaticMethod
   public func suggestPlayerNamesWhenNullTabCompletions() -> Bool
-
-  /// Java method `getName`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public static java.lang.String org.bukkit.Bukkit.getName()
-  /// ```
-@JavaStaticMethod
-  public func getName() -> String
-
-  /// Java method `shutdown`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public static void org.bukkit.Bukkit.shutdown()
-  /// ```
-@JavaStaticMethod
-  public func shutdown()
-
-  /// Java method `getPort`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public static int org.bukkit.Bukkit.getPort()
-  /// ```
-@JavaStaticMethod
-  public func getPort() -> Int32
-
-  /// Java method `broadcast`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public static int org.bukkit.Bukkit.broadcast(java.lang.String,java.lang.String)
-  /// ```
-@available(*, deprecated)
-  @JavaStaticMethod
-  public func broadcast(_ arg0: String, _ arg1: String) -> Int32
-
-  /// Java method `reload`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public static void org.bukkit.Bukkit.reload()
-  /// ```
-@JavaStaticMethod
-  public func reload()
-
-  /// Java method `getVersion`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public static java.lang.String org.bukkit.Bukkit.getVersion()
-  /// ```
-@JavaStaticMethod
-  public func getVersion() -> String
 }

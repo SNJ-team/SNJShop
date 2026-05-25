@@ -32,7 +32,7 @@ mkdir -p ~/SNJ/projects/SNJShop/dist/swiftlibs
 cp ~/SNJ/projects/SNJShop/.build/arm64-apple-macosx/release/libSNJShop.dylib ~/SNJ/projects/SNJShop/dist/swiftlibs/
 cp ~/SNJ/projects/SNJShop/.build/arm64-apple-macosx/release/libSwiftJava.dylib ~/SNJ/projects/SNJShop/dist/swiftlibs/
 cp ~/SNJ/libs/swift-java/.build/arm64-apple-macosx/debug/libSwiftRuntimeFunctions.dylib ~/SNJ/projects/SNJShop/dist/swiftlibs/
-cp ~/SNJ/projects/SNJShop/java/build/libs/java-1.0.0.jar ~/SNJ/projects/SNJShop/dist/
+cp ~/SNJ/projects/SNJShop/java/build/libs/SNJShop.jar ~/SNJ/projects/SNJShop/dist/
 
 
 echo "Building Java jar with updated bindings..."

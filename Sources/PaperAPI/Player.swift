@@ -4,6 +4,359 @@ import SwiftJavaJNICore
 
 @JavaInterface("org.bukkit.entity.Player")
 public struct Player {
+  /// Java method `getName`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract java.lang.String org.bukkit.entity.Player.getName()
+  /// ```
+@JavaMethod
+  public func getName() -> String
+
+  /// Java method `transfer`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract void org.bukkit.entity.Player.transfer(java.lang.String,int)
+  /// ```
+@JavaMethod
+  public func transfer(_ arg0: String, _ arg1: Int32)
+
+  /// Java method `getDisplayName`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract java.lang.String org.bukkit.entity.Player.getDisplayName()
+  /// ```
+@available(*, deprecated)
+  @JavaMethod
+  public func getDisplayName() -> String
+
+  /// Java method `getLocale`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract java.lang.String org.bukkit.entity.Player.getLocale()
+  /// ```
+@available(*, deprecated)
+  @JavaMethod
+  public func getLocale() -> String
+
+  /// Java method `setLevel`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract void org.bukkit.entity.Player.setLevel(int)
+  /// ```
+@JavaMethod
+  public func setLevel(_ arg0: Int32)
+
+  /// Java method `getLevel`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract int org.bukkit.entity.Player.getLevel()
+  /// ```
+@JavaMethod
+  public func getLevel() -> Int32
+
+  /// Java method `kickPlayer`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract void org.bukkit.entity.Player.kickPlayer(java.lang.String)
+  /// ```
+@available(*, deprecated)
+  @JavaMethod
+  public func kickPlayer(_ arg0: String)
+
+  /// Java method `giveExp`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract void org.bukkit.entity.Player.giveExp(int,boolean)
+  /// ```
+@JavaMethod
+  public func giveExp(_ arg0: Int32, _ arg1: Bool)
+
+  /// Java method `giveExp`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public default void org.bukkit.entity.Player.giveExp(int)
+  /// ```
+@JavaMethod
+  public func giveExp(_ arg0: Int32)
+
+  /// Java method `setResourcePack`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract void org.bukkit.entity.Player.setResourcePack(java.lang.String,byte[],boolean)
+  /// ```
+@available(*, deprecated)
+  @JavaMethod
+  public func setResourcePack(_ arg0: String, _ arg1: [Int8], _ arg2: Bool)
+
+  /// Java method `setResourcePack`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract void org.bukkit.entity.Player.setResourcePack(java.lang.String)
+  /// ```
+@available(*, deprecated)
+  @JavaMethod
+  public func setResourcePack(_ arg0: String)
+
+  /// Java method `setResourcePack`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract void org.bukkit.entity.Player.setResourcePack(java.lang.String,byte[])
+  /// ```
+@available(*, deprecated)
+  @JavaMethod
+  public func setResourcePack(_ arg0: String, _ arg1: [Int8])
+
+  /// Java method `setResourcePack`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract void org.bukkit.entity.Player.setResourcePack(java.lang.String,byte[],java.lang.String)
+  /// ```
+@available(*, deprecated)
+  @JavaMethod
+  public func setResourcePack(_ arg0: String, _ arg1: [Int8], _ arg2: String)
+
+  /// Java method `setResourcePack`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public default void org.bukkit.entity.Player.setResourcePack(java.lang.String,java.lang.String,boolean)
+  /// ```
+@JavaMethod
+  public func setResourcePack(_ arg0: String, _ arg1: String, _ arg2: Bool)
+
+  /// Java method `setResourcePack`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public default void org.bukkit.entity.Player.setResourcePack(java.lang.String,java.lang.String)
+  /// ```
+@JavaMethod
+  public func setResourcePack(_ arg0: String, _ arg1: String)
+
+  /// Java method `setResourcePack`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract void org.bukkit.entity.Player.setResourcePack(java.lang.String,byte[],java.lang.String,boolean)
+  /// ```
+@available(*, deprecated)
+  @JavaMethod
+  public func setResourcePack(_ arg0: String, _ arg1: [Int8], _ arg2: String, _ arg3: Bool)
+
+  /// Java method `setViewDistance`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract void org.bukkit.entity.Player.setViewDistance(int)
+  /// ```
+@JavaMethod
+  public func setViewDistance(_ arg0: Int32)
+
+  /// Java method `showElderGuardian`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public default void org.bukkit.entity.Player.showElderGuardian()
+  /// ```
+@JavaMethod
+  public func showElderGuardian()
+
+  /// Java method `showElderGuardian`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract void org.bukkit.entity.Player.showElderGuardian(boolean)
+  /// ```
+@JavaMethod
+  public func showElderGuardian(_ arg0: Bool)
+
+  /// Java method `isChunkSent`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract boolean org.bukkit.entity.Player.isChunkSent(long)
+  /// ```
+@JavaMethod
+  public func isChunkSent(_ arg0: Int64) -> Bool
+
+  /// Java method `getPlayerListName`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract java.lang.String org.bukkit.entity.Player.getPlayerListName()
+  /// ```
+@available(*, deprecated)
+  @JavaMethod
+  public func getPlayerListName() -> String
+
+  /// Java method `setPlayerListName`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract void org.bukkit.entity.Player.setPlayerListName(java.lang.String)
+  /// ```
+@available(*, deprecated)
+  @JavaMethod
+  public func setPlayerListName(_ arg0: String)
+
+  /// Java method `getPlayerListOrder`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract int org.bukkit.entity.Player.getPlayerListOrder()
+  /// ```
+@JavaMethod
+  public func getPlayerListOrder() -> Int32
+
+  /// Java method `setPlayerListOrder`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract void org.bukkit.entity.Player.setPlayerListOrder(int)
+  /// ```
+@JavaMethod
+  public func setPlayerListOrder(_ arg0: Int32)
+
+  /// Java method `isTransferred`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract boolean org.bukkit.entity.Player.isTransferred()
+  /// ```
+@JavaMethod
+  public func isTransferred() -> Bool
+
+  /// Java method `sendRawMessage`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract void org.bukkit.entity.Player.sendRawMessage(java.lang.String)
+  /// ```
+@JavaMethod
+  public func sendRawMessage(_ arg0: String)
+
+  /// Java method `kick`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract void org.bukkit.entity.Player.kick()
+  /// ```
+@JavaMethod
+  public func kick()
+
+  /// Java method `chat`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract void org.bukkit.entity.Player.chat(java.lang.String)
+  /// ```
+@JavaMethod
+  public func chat(_ arg0: String)
+
+  /// Java method `performCommand`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract boolean org.bukkit.entity.Player.performCommand(java.lang.String)
+  /// ```
+@JavaMethod
+  public func performCommand(_ arg0: String) -> Bool
+
+  /// Java method `isOnGround`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract boolean org.bukkit.entity.Player.isOnGround()
+  /// ```
+@available(*, deprecated)
+  @JavaMethod
+  public func isOnGround() -> Bool
+
+  /// Java method `isSneaking`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract boolean org.bukkit.entity.Player.isSneaking()
+  /// ```
+@JavaMethod
+  public func isSneaking() -> Bool
+
+  /// Java method `setSneaking`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract void org.bukkit.entity.Player.setSneaking(boolean)
+  /// ```
+@JavaMethod
+  public func setSneaking(_ arg0: Bool)
+
+  /// Java method `isSprinting`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract boolean org.bukkit.entity.Player.isSprinting()
+  /// ```
+@JavaMethod
+  public func isSprinting() -> Bool
+
+  /// Java method `setSprinting`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract void org.bukkit.entity.Player.setSprinting(boolean)
+  /// ```
+@JavaMethod
+  public func setSprinting(_ arg0: Bool)
+
+  /// Java method `saveData`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract void org.bukkit.entity.Player.saveData()
+  /// ```
+@JavaMethod
+  public func saveData()
+
+  /// Java method `loadData`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract void org.bukkit.entity.Player.loadData()
+  /// ```
+@JavaMethod
+  public func loadData()
+
+  /// Java method `setSleepingIgnored`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract void org.bukkit.entity.Player.setSleepingIgnored(boolean)
+  /// ```
+@JavaMethod
+  public func setSleepingIgnored(_ arg0: Bool)
+
+  /// Java method `isSleepingIgnored`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract boolean org.bukkit.entity.Player.isSleepingIgnored()
+  /// ```
+@JavaMethod
+  public func isSleepingIgnored() -> Bool
+
   /// Java method `stopSound`.
   ///
   /// ### Java method signature
@@ -368,19 +721,19 @@ public struct Player {
   ///
   /// ### Java method signature
   /// ```java
-  /// public abstract void org.bukkit.entity.Player.sendHealthUpdate(double,int,float)
+  /// public abstract void org.bukkit.entity.Player.sendHealthUpdate()
   /// ```
 @JavaMethod
-  public func sendHealthUpdate(_ arg0: Double, _ arg1: Int32, _ arg2: Float)
+  public func sendHealthUpdate()
 
   /// Java method `sendHealthUpdate`.
   ///
   /// ### Java method signature
   /// ```java
-  /// public abstract void org.bukkit.entity.Player.sendHealthUpdate()
+  /// public abstract void org.bukkit.entity.Player.sendHealthUpdate(double,int,float)
   /// ```
 @JavaMethod
-  public func sendHealthUpdate()
+  public func sendHealthUpdate(_ arg0: Double, _ arg1: Int32, _ arg2: Float)
 
   /// Java method `isHealthScaled`.
   ///
@@ -607,303 +960,6 @@ public struct Player {
 @available(*, deprecated)
   @JavaMethod
   public func setDisplayName(_ arg0: String)
-
-  /// Java method `kickPlayer`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract void org.bukkit.entity.Player.kickPlayer(java.lang.String)
-  /// ```
-@available(*, deprecated)
-  @JavaMethod
-  public func kickPlayer(_ arg0: String)
-
-  /// Java method `giveExp`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public default void org.bukkit.entity.Player.giveExp(int)
-  /// ```
-@JavaMethod
-  public func giveExp(_ arg0: Int32)
-
-  /// Java method `giveExp`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract void org.bukkit.entity.Player.giveExp(int,boolean)
-  /// ```
-@JavaMethod
-  public func giveExp(_ arg0: Int32, _ arg1: Bool)
-
-  /// Java method `setResourcePack`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract void org.bukkit.entity.Player.setResourcePack(java.lang.String)
-  /// ```
-@available(*, deprecated)
-  @JavaMethod
-  public func setResourcePack(_ arg0: String)
-
-  /// Java method `setResourcePack`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public default void org.bukkit.entity.Player.setResourcePack(java.lang.String,java.lang.String,boolean)
-  /// ```
-@JavaMethod
-  public func setResourcePack(_ arg0: String, _ arg1: String, _ arg2: Bool)
-
-  /// Java method `setResourcePack`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract void org.bukkit.entity.Player.setResourcePack(java.lang.String,byte[],java.lang.String,boolean)
-  /// ```
-@available(*, deprecated)
-  @JavaMethod
-  public func setResourcePack(_ arg0: String, _ arg1: [Int8], _ arg2: String, _ arg3: Bool)
-
-  /// Java method `setResourcePack`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract void org.bukkit.entity.Player.setResourcePack(java.lang.String,byte[],java.lang.String)
-  /// ```
-@available(*, deprecated)
-  @JavaMethod
-  public func setResourcePack(_ arg0: String, _ arg1: [Int8], _ arg2: String)
-
-  /// Java method `setResourcePack`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract void org.bukkit.entity.Player.setResourcePack(java.lang.String,byte[])
-  /// ```
-@available(*, deprecated)
-  @JavaMethod
-  public func setResourcePack(_ arg0: String, _ arg1: [Int8])
-
-  /// Java method `setResourcePack`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public default void org.bukkit.entity.Player.setResourcePack(java.lang.String,java.lang.String)
-  /// ```
-@JavaMethod
-  public func setResourcePack(_ arg0: String, _ arg1: String)
-
-  /// Java method `setResourcePack`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract void org.bukkit.entity.Player.setResourcePack(java.lang.String,byte[],boolean)
-  /// ```
-@available(*, deprecated)
-  @JavaMethod
-  public func setResourcePack(_ arg0: String, _ arg1: [Int8], _ arg2: Bool)
-
-  /// Java method `setViewDistance`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract void org.bukkit.entity.Player.setViewDistance(int)
-  /// ```
-@JavaMethod
-  public func setViewDistance(_ arg0: Int32)
-
-  /// Java method `showElderGuardian`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public default void org.bukkit.entity.Player.showElderGuardian()
-  /// ```
-@JavaMethod
-  public func showElderGuardian()
-
-  /// Java method `showElderGuardian`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract void org.bukkit.entity.Player.showElderGuardian(boolean)
-  /// ```
-@JavaMethod
-  public func showElderGuardian(_ arg0: Bool)
-
-  /// Java method `isChunkSent`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract boolean org.bukkit.entity.Player.isChunkSent(long)
-  /// ```
-@JavaMethod
-  public func isChunkSent(_ arg0: Int64) -> Bool
-
-  /// Java method `getPlayerListName`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract java.lang.String org.bukkit.entity.Player.getPlayerListName()
-  /// ```
-@available(*, deprecated)
-  @JavaMethod
-  public func getPlayerListName() -> String
-
-  /// Java method `setPlayerListName`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract void org.bukkit.entity.Player.setPlayerListName(java.lang.String)
-  /// ```
-@available(*, deprecated)
-  @JavaMethod
-  public func setPlayerListName(_ arg0: String)
-
-  /// Java method `getPlayerListOrder`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract int org.bukkit.entity.Player.getPlayerListOrder()
-  /// ```
-@JavaMethod
-  public func getPlayerListOrder() -> Int32
-
-  /// Java method `setPlayerListOrder`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract void org.bukkit.entity.Player.setPlayerListOrder(int)
-  /// ```
-@JavaMethod
-  public func setPlayerListOrder(_ arg0: Int32)
-
-  /// Java method `isTransferred`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract boolean org.bukkit.entity.Player.isTransferred()
-  /// ```
-@JavaMethod
-  public func isTransferred() -> Bool
-
-  /// Java method `sendRawMessage`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract void org.bukkit.entity.Player.sendRawMessage(java.lang.String)
-  /// ```
-@JavaMethod
-  public func sendRawMessage(_ arg0: String)
-
-  /// Java method `kick`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract void org.bukkit.entity.Player.kick()
-  /// ```
-@JavaMethod
-  public func kick()
-
-  /// Java method `chat`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract void org.bukkit.entity.Player.chat(java.lang.String)
-  /// ```
-@JavaMethod
-  public func chat(_ arg0: String)
-
-  /// Java method `performCommand`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract boolean org.bukkit.entity.Player.performCommand(java.lang.String)
-  /// ```
-@JavaMethod
-  public func performCommand(_ arg0: String) -> Bool
-
-  /// Java method `isOnGround`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract boolean org.bukkit.entity.Player.isOnGround()
-  /// ```
-@available(*, deprecated)
-  @JavaMethod
-  public func isOnGround() -> Bool
-
-  /// Java method `isSneaking`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract boolean org.bukkit.entity.Player.isSneaking()
-  /// ```
-@JavaMethod
-  public func isSneaking() -> Bool
-
-  /// Java method `setSneaking`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract void org.bukkit.entity.Player.setSneaking(boolean)
-  /// ```
-@JavaMethod
-  public func setSneaking(_ arg0: Bool)
-
-  /// Java method `isSprinting`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract boolean org.bukkit.entity.Player.isSprinting()
-  /// ```
-@JavaMethod
-  public func isSprinting() -> Bool
-
-  /// Java method `setSprinting`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract void org.bukkit.entity.Player.setSprinting(boolean)
-  /// ```
-@JavaMethod
-  public func setSprinting(_ arg0: Bool)
-
-  /// Java method `saveData`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract void org.bukkit.entity.Player.saveData()
-  /// ```
-@JavaMethod
-  public func saveData()
-
-  /// Java method `loadData`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract void org.bukkit.entity.Player.loadData()
-  /// ```
-@JavaMethod
-  public func loadData()
-
-  /// Java method `setSleepingIgnored`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract void org.bukkit.entity.Player.setSleepingIgnored(boolean)
-  /// ```
-@JavaMethod
-  public func setSleepingIgnored(_ arg0: Bool)
-
-  /// Java method `isSleepingIgnored`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract boolean org.bukkit.entity.Player.isSleepingIgnored()
-  /// ```
-@JavaMethod
-  public func isSleepingIgnored() -> Bool
 
   /// Java method `getSimulationDistance`.
   ///
@@ -1219,61 +1275,14 @@ public struct Player {
 @JavaMethod
   public func getExperiencePointsNeededForNextLevel() -> Int32
 
-  /// Java method `getName`.
+  /// Java method `isBlocking`.
   ///
   /// ### Java method signature
   /// ```java
-  /// public abstract java.lang.String org.bukkit.entity.Player.getName()
+  /// public abstract boolean org.bukkit.entity.HumanEntity.isBlocking()
   /// ```
 @JavaMethod
-  public func getName() -> String
-
-  /// Java method `transfer`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract void org.bukkit.entity.Player.transfer(java.lang.String,int)
-  /// ```
-@JavaMethod
-  public func transfer(_ arg0: String, _ arg1: Int32)
-
-  /// Java method `getDisplayName`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract java.lang.String org.bukkit.entity.Player.getDisplayName()
-  /// ```
-@available(*, deprecated)
-  @JavaMethod
-  public func getDisplayName() -> String
-
-  /// Java method `getLocale`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract java.lang.String org.bukkit.entity.Player.getLocale()
-  /// ```
-@available(*, deprecated)
-  @JavaMethod
-  public func getLocale() -> String
-
-  /// Java method `setLevel`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract void org.bukkit.entity.Player.setLevel(int)
-  /// ```
-@JavaMethod
-  public func setLevel(_ arg0: Int32)
-
-  /// Java method `getLevel`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract int org.bukkit.entity.Player.getLevel()
-  /// ```
-@JavaMethod
-  public func getLevel() -> Int32
+  public func isBlocking() -> Bool
 
   /// Java method `dropItem`.
   ///
@@ -1324,19 +1333,19 @@ public struct Player {
   ///
   /// ### Java method signature
   /// ```java
-  /// public abstract org.bukkit.inventory.InventoryView org.bukkit.entity.HumanEntity.openInventory(org.bukkit.inventory.Inventory)
+  /// public abstract void org.bukkit.entity.HumanEntity.openInventory(org.bukkit.inventory.InventoryView)
   /// ```
 @JavaMethod
-  public func openInventory(_ arg0: Inventory?) -> InventoryView!
+  public func openInventory(_ arg0: InventoryView?)
 
   /// Java method `openInventory`.
   ///
   /// ### Java method signature
   /// ```java
-  /// public abstract void org.bukkit.entity.HumanEntity.openInventory(org.bukkit.inventory.InventoryView)
+  /// public abstract org.bukkit.inventory.InventoryView org.bukkit.entity.HumanEntity.openInventory(org.bukkit.inventory.Inventory)
   /// ```
 @JavaMethod
-  public func openInventory(_ arg0: InventoryView?)
+  public func openInventory(_ arg0: Inventory?) -> InventoryView!
 
   /// Java method `closeInventory`.
   ///
@@ -1592,15 +1601,6 @@ public struct Player {
 @JavaMethod
   public func setUnsaturatedRegenRate(_ arg0: Int32)
 
-  /// Java method `isBlocking`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract boolean org.bukkit.entity.HumanEntity.isBlocking()
-  /// ```
-@JavaMethod
-  public func isBlocking() -> Bool
-
   /// Java method `isGliding`.
   ///
   /// ### Java method signature
@@ -1609,6 +1609,15 @@ public struct Player {
   /// ```
 @JavaMethod
   public func isGliding() -> Bool
+
+  /// Java method `damageItemStack`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract org.bukkit.inventory.ItemStack org.bukkit.entity.LivingEntity.damageItemStack(org.bukkit.inventory.ItemStack,int)
+  /// ```
+@JavaMethod
+  public func damageItemStack(_ arg0: ItemStack?, _ arg1: Int32) -> ItemStack!
 
   /// Java method `setArrowsInBody`.
   ///
@@ -2084,15 +2093,6 @@ public struct Player {
 @JavaMethod
   public func knockback(_ arg0: Double, _ arg1: Double, _ arg2: Double)
 
-  /// Java method `damageItemStack`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract org.bukkit.inventory.ItemStack org.bukkit.entity.LivingEntity.damageItemStack(org.bukkit.inventory.ItemStack,int)
-  /// ```
-@JavaMethod
-  public func damageItemStack(_ arg0: ItemStack?, _ arg1: Int32) -> ItemStack!
-
   /// Java method `getBodyYaw`.
   ///
   /// ### Java method signature
@@ -2336,15 +2336,6 @@ public struct Player {
 @JavaMethod
   public func getItemUseRemainingTime() -> Int32
 
-  /// Java method `heal`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public default void org.bukkit.entity.Damageable.heal(double)
-  /// ```
-@JavaMethod
-  public func heal(_ arg0: Double)
-
   /// Java method `damage`.
   ///
   /// ### Java method signature
@@ -2353,6 +2344,15 @@ public struct Player {
   /// ```
 @JavaMethod
   public func damage(_ arg0: Double)
+
+  /// Java method `heal`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public default void org.bukkit.entity.Damageable.heal(double)
+  /// ```
+@JavaMethod
+  public func heal(_ arg0: Double)
 
   /// Java method `getHealth`.
   ///
@@ -2420,95 +2420,50 @@ public struct Player {
 @JavaMethod
   public func setAbsorptionAmount(_ arg0: Double)
 
-  /// Java method `getY`.
+  /// Java method `remove`.
   ///
   /// ### Java method signature
   /// ```java
-  /// public abstract double org.bukkit.entity.Entity.getY()
+  /// public abstract void org.bukkit.entity.Entity.remove()
   /// ```
 @JavaMethod
-  public func getY() -> Double
+  public func remove()
 
-  /// Java method `getZ`.
+  /// Java method `isEmpty`.
   ///
   /// ### Java method signature
   /// ```java
-  /// public abstract double org.bukkit.entity.Entity.getZ()
+  /// public abstract boolean org.bukkit.entity.Entity.isEmpty()
   /// ```
 @JavaMethod
-  public func getZ() -> Double
+  public func isEmpty() -> Bool
 
-  /// Java method `getPitch`.
+  /// Java method `isFrozen`.
   ///
   /// ### Java method signature
   /// ```java
-  /// public abstract float org.bukkit.entity.Entity.getPitch()
+  /// public abstract boolean org.bukkit.entity.Entity.isFrozen()
   /// ```
 @JavaMethod
-  public func getPitch() -> Float
+  public func isFrozen() -> Bool
 
-  /// Java method `getYaw`.
+  /// Java method `isValid`.
   ///
   /// ### Java method signature
   /// ```java
-  /// public abstract float org.bukkit.entity.Entity.getYaw()
+  /// public abstract boolean org.bukkit.entity.Entity.isValid()
   /// ```
 @JavaMethod
-  public func getYaw() -> Float
+  public func isValid() -> Bool
 
-  /// Java method `getRider`.
+  /// Java method `getAsString`.
   ///
   /// ### Java method signature
   /// ```java
-  /// public abstract org.bukkit.entity.Player org.bukkit.entity.Entity.getRider()
+  /// public abstract java.lang.String org.bukkit.entity.Entity.getAsString()
   /// ```
 @JavaMethod
-  public func getRider() -> Player!
-
-  /// Java method `hasRider`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract boolean org.bukkit.entity.Entity.hasRider()
-  /// ```
-@JavaMethod
-  public func hasRider() -> Bool
-
-  /// Java method `isRidable`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract boolean org.bukkit.entity.Entity.isRidable()
-  /// ```
-@JavaMethod
-  public func isRidable() -> Bool
-
-  /// Java method `isRidableInWater`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract boolean org.bukkit.entity.Entity.isRidableInWater()
-  /// ```
-@JavaMethod
-  public func isRidableInWater() -> Bool
-
-  /// Java method `isInDaylight`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract boolean org.bukkit.entity.Entity.isInDaylight()
-  /// ```
-@JavaMethod
-  public func isInDaylight() -> Bool
-
-  /// Java method `isImmuneToFire`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract boolean org.bukkit.entity.Entity.isImmuneToFire()
-  /// ```
-@JavaMethod
-  public func isImmuneToFire() -> Bool
+  public func getAsString() -> String
 
   /// Java method `getHeight`.
   ///
@@ -2861,15 +2816,6 @@ public struct Player {
 @JavaMethod
   public func isInWorld() -> Bool
 
-  /// Java method `getAsString`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract java.lang.String org.bukkit.entity.Entity.getAsString()
-  /// ```
-@JavaMethod
-  public func getAsString() -> String
-
   /// Java method `fromMobSpawner`.
   ///
   /// ### Java method signature
@@ -2951,6 +2897,96 @@ public struct Player {
 @JavaMethod
   public func getX() -> Double
 
+  /// Java method `getY`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract double org.bukkit.entity.Entity.getY()
+  /// ```
+@JavaMethod
+  public func getY() -> Double
+
+  /// Java method `getZ`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract double org.bukkit.entity.Entity.getZ()
+  /// ```
+@JavaMethod
+  public func getZ() -> Double
+
+  /// Java method `getPitch`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract float org.bukkit.entity.Entity.getPitch()
+  /// ```
+@JavaMethod
+  public func getPitch() -> Float
+
+  /// Java method `getYaw`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract float org.bukkit.entity.Entity.getYaw()
+  /// ```
+@JavaMethod
+  public func getYaw() -> Float
+
+  /// Java method `getRider`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract org.bukkit.entity.Player org.bukkit.entity.Entity.getRider()
+  /// ```
+@JavaMethod
+  public func getRider() -> Player!
+
+  /// Java method `hasRider`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract boolean org.bukkit.entity.Entity.hasRider()
+  /// ```
+@JavaMethod
+  public func hasRider() -> Bool
+
+  /// Java method `isRidable`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract boolean org.bukkit.entity.Entity.isRidable()
+  /// ```
+@JavaMethod
+  public func isRidable() -> Bool
+
+  /// Java method `isRidableInWater`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract boolean org.bukkit.entity.Entity.isRidableInWater()
+  /// ```
+@JavaMethod
+  public func isRidableInWater() -> Bool
+
+  /// Java method `isInDaylight`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract boolean org.bukkit.entity.Entity.isInDaylight()
+  /// ```
+@JavaMethod
+  public func isInDaylight() -> Bool
+
+  /// Java method `isImmuneToFire`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract boolean org.bukkit.entity.Entity.isImmuneToFire()
+  /// ```
+@JavaMethod
+  public func isImmuneToFire() -> Bool
+
   /// Java method `isFreezeTickingLocked`.
   ///
   /// ### Java method signature
@@ -3022,42 +3058,6 @@ public struct Player {
   /// ```
 @JavaMethod
   public func getScoreboardEntryName() -> String
-
-  /// Java method `remove`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract void org.bukkit.entity.Entity.remove()
-  /// ```
-@JavaMethod
-  public func remove()
-
-  /// Java method `isEmpty`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract boolean org.bukkit.entity.Entity.isEmpty()
-  /// ```
-@JavaMethod
-  public func isEmpty() -> Bool
-
-  /// Java method `isFrozen`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract boolean org.bukkit.entity.Entity.isFrozen()
-  /// ```
-@JavaMethod
-  public func isFrozen() -> Bool
-
-  /// Java method `isValid`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract boolean org.bukkit.entity.Entity.isValid()
-  /// ```
-@JavaMethod
-  public func isValid() -> Bool
 
   /// Java method `hasMetadata`.
   ///
@@ -3214,6 +3214,33 @@ public struct Player {
 @JavaMethod
   public func acceptConversationInput(_ arg0: String)
 
+  /// Java method `isConnected`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract boolean org.bukkit.OfflinePlayer.isConnected()
+  /// ```
+@JavaMethod
+  public func isConnected() -> Bool
+
+  /// Java method `isOnline`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract boolean org.bukkit.OfflinePlayer.isOnline()
+  /// ```
+@JavaMethod
+  public func isOnline() -> Bool
+
+  /// Java method `getPlayer`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract org.bukkit.entity.Player org.bukkit.OfflinePlayer.getPlayer()
+  /// ```
+@JavaMethod
+  public func getPlayer() -> Player!
+
   /// Java method `isBanned`.
   ///
   /// ### Java method signature
@@ -3287,33 +3314,6 @@ public struct Player {
 @JavaMethod
   public func getLastSeen() -> Int64
 
-  /// Java method `getPlayer`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract org.bukkit.entity.Player org.bukkit.OfflinePlayer.getPlayer()
-  /// ```
-@JavaMethod
-  public func getPlayer() -> Player!
-
-  /// Java method `isOnline`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract boolean org.bukkit.OfflinePlayer.isOnline()
-  /// ```
-@JavaMethod
-  public func isOnline() -> Bool
-
-  /// Java method `isConnected`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract boolean org.bukkit.OfflinePlayer.isConnected()
-  /// ```
-@JavaMethod
-  public func isConnected() -> Bool
-
   /// Java method `getProtocolVersion`.
   ///
   /// ### Java method signature
@@ -3329,15 +3329,6 @@ extension Player {
   @JavaMethod
   @_nonoverride public convenience init(environment: JNIEnvironment? = nil)
 
-    /// Java method `respawn`.
-    ///
-    /// ### Java method signature
-    /// ```java
-    /// public void org.bukkit.entity.Player$Spigot.respawn()
-    /// ```
-  @JavaMethod
-  open func respawn()
-
     /// Java method `getPing`.
     ///
     /// ### Java method signature
@@ -3347,5 +3338,14 @@ extension Player {
   @available(*, deprecated)
   @JavaMethod
   open func getPing() -> Int32
+
+    /// Java method `respawn`.
+    ///
+    /// ### Java method signature
+    /// ```java
+    /// public void org.bukkit.entity.Player$Spigot.respawn()
+    /// ```
+  @JavaMethod
+  open func respawn()
   }
 }

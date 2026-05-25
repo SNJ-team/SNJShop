@@ -4,15 +4,23 @@ import SwiftJavaJNICore
 
 @JavaInterface("org.bukkit.inventory.InventoryView")
 public struct InventoryView {
-  /// Java method `getTitle`.
+  /// Java method `close`.
   ///
   /// ### Java method signature
   /// ```java
-  /// public abstract java.lang.String org.bukkit.inventory.InventoryView.getTitle()
+  /// public abstract void org.bukkit.inventory.InventoryView.close()
   /// ```
-@available(*, deprecated)
-  @JavaMethod
-  public func getTitle() -> String
+@JavaMethod
+  public func close()
+
+  /// Java method `open`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract void org.bukkit.inventory.InventoryView.open()
+  /// ```
+@JavaMethod
+  public func open()
 
   /// Java method `getTopInventory`.
   ///
@@ -23,6 +31,16 @@ public struct InventoryView {
 @JavaMethod
   public func getTopInventory() -> Inventory!
 
+  /// Java method `getTitle`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract java.lang.String org.bukkit.inventory.InventoryView.getTitle()
+  /// ```
+@available(*, deprecated)
+  @JavaMethod
+  public func getTitle() -> String
+
   /// Java method `getBottomInventory`.
   ///
   /// ### Java method signature
@@ -31,33 +49,6 @@ public struct InventoryView {
   /// ```
 @JavaMethod
   public func getBottomInventory() -> Inventory!
-
-  /// Java method `setCursor`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract void org.bukkit.inventory.InventoryView.setCursor(org.bukkit.inventory.ItemStack)
-  /// ```
-@JavaMethod
-  public func setCursor(_ arg0: ItemStack?)
-
-  /// Java method `getCursor`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract org.bukkit.inventory.ItemStack org.bukkit.inventory.InventoryView.getCursor()
-  /// ```
-@JavaMethod
-  public func getCursor() -> ItemStack!
-
-  /// Java method `convertSlot`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract int org.bukkit.inventory.InventoryView.convertSlot(int)
-  /// ```
-@JavaMethod
-  public func convertSlot(_ arg0: Int32) -> Int32
 
   /// Java method `countSlots`.
   ///
@@ -88,14 +79,23 @@ public struct InventoryView {
   @JavaMethod
   public func setTitle(_ arg0: String)
 
-  /// Java method `getInventory`.
+  /// Java method `convertSlot`.
   ///
   /// ### Java method signature
   /// ```java
-  /// public abstract org.bukkit.inventory.Inventory org.bukkit.inventory.InventoryView.getInventory(int)
+  /// public abstract int org.bukkit.inventory.InventoryView.convertSlot(int)
   /// ```
 @JavaMethod
-  public func getInventory(_ arg0: Int32) -> Inventory!
+  public func convertSlot(_ arg0: Int32) -> Int32
+
+  /// Java method `getCursor`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract org.bukkit.inventory.ItemStack org.bukkit.inventory.InventoryView.getCursor()
+  /// ```
+@JavaMethod
+  public func getCursor() -> ItemStack!
 
   /// Java method `getItem`.
   ///
@@ -106,6 +106,15 @@ public struct InventoryView {
 @JavaMethod
   public func getItem(_ arg0: Int32) -> ItemStack!
 
+  /// Java method `setCursor`.
+  ///
+  /// ### Java method signature
+  /// ```java
+  /// public abstract void org.bukkit.inventory.InventoryView.setCursor(org.bukkit.inventory.ItemStack)
+  /// ```
+@JavaMethod
+  public func setCursor(_ arg0: ItemStack?)
+
   /// Java method `setItem`.
   ///
   /// ### Java method signature
@@ -115,23 +124,14 @@ public struct InventoryView {
 @JavaMethod
   public func setItem(_ arg0: Int32, _ arg1: ItemStack?)
 
-  /// Java method `close`.
+  /// Java method `getInventory`.
   ///
   /// ### Java method signature
   /// ```java
-  /// public abstract void org.bukkit.inventory.InventoryView.close()
+  /// public abstract org.bukkit.inventory.Inventory org.bukkit.inventory.InventoryView.getInventory(int)
   /// ```
 @JavaMethod
-  public func close()
-
-  /// Java method `open`.
-  ///
-  /// ### Java method signature
-  /// ```java
-  /// public abstract void org.bukkit.inventory.InventoryView.open()
-  /// ```
-@JavaMethod
-  public func open()
+  public func getInventory(_ arg0: Int32) -> Inventory!
 }
 extension JavaClass<InventoryView> {
   @JavaStaticField(isFinal: true)
